@@ -57,6 +57,7 @@ struct ContentView: View {
             HStack {
                 Button {
                     viewModel.player.jumpBackward(10)
+                    viewModel.player.play()
                 } label: {
                     Image(systemName: "gobackward.10")
                 }
@@ -75,6 +76,7 @@ struct ContentView: View {
                 }
                 Button {
                     viewModel.player.jumpForward(10)
+                    viewModel.player.play()
                 } label: {
                     Image(systemName: "goforward.10")
                 }
