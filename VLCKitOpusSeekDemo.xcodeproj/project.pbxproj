@@ -11,6 +11,9 @@
 		35767CD02AB0B11500369834 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35767CCF2AB0B11500369834 /* ContentView.swift */; };
 		35767CD22AB0B11500369834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35767CD12AB0B11500369834 /* Assets.xcassets */; };
 		35767CD62AB0B11500369834 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35767CD52AB0B11500369834 /* Preview Assets.xcassets */; };
+		35767CDD2AB0C60800369834 /* ehren-paper_lights-96.opus in Resources */ = {isa = PBXBuildFile; fileRef = 35767CDB2AB0C60700369834 /* ehren-paper_lights-96.opus */; };
+		35767CDE2AB0C60800369834 /* ehren-paper_lights-96.LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 35767CDC2AB0C60700369834 /* ehren-paper_lights-96.LICENSE */; };
+		46B95CBEA0CE4AF0B93AEF51 /* Pods_VLCKitOpusSeekDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90501FB43817CC52D55FD58F /* Pods_VLCKitOpusSeekDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,11 @@
 		35767CD12AB0B11500369834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35767CD32AB0B11500369834 /* VLCKitOpusSeekDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VLCKitOpusSeekDemo.entitlements; sourceTree = "<group>"; };
 		35767CD52AB0B11500369834 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35767CDB2AB0C60700369834 /* ehren-paper_lights-96.opus */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ehren-paper_lights-96.opus"; sourceTree = "<group>"; };
+		35767CDC2AB0C60700369834 /* ehren-paper_lights-96.LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ehren-paper_lights-96.LICENSE"; sourceTree = "<group>"; };
+		4858B4DFCDAF1EDD6847EEB6 /* Pods-VLCKitOpusSeekDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLCKitOpusSeekDemo.debug.xcconfig"; path = "Target Support Files/Pods-VLCKitOpusSeekDemo/Pods-VLCKitOpusSeekDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		90501FB43817CC52D55FD58F /* Pods_VLCKitOpusSeekDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLCKitOpusSeekDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADFA269C59617178A263728 /* Pods-VLCKitOpusSeekDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLCKitOpusSeekDemo.release.xcconfig"; path = "Target Support Files/Pods-VLCKitOpusSeekDemo/Pods-VLCKitOpusSeekDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B95CBEA0CE4AF0B93AEF51 /* Pods_VLCKitOpusSeekDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +46,10 @@
 			isa = PBXGroup;
 			children = (
 				35767CCC2AB0B11500369834 /* VLCKitOpusSeekDemo */,
+				35767CDA2AB0C60700369834 /* Resources */,
 				352B93092AB0B0A2004602BA /* Products */,
+				FFEE86C6EFF20799A50BC8E4 /* Pods */,
+				7193F92EE803EB475223904D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +81,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		35767CDA2AB0C60700369834 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35767CDB2AB0C60700369834 /* ehren-paper_lights-96.opus */,
+				35767CDC2AB0C60700369834 /* ehren-paper_lights-96.LICENSE */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7193F92EE803EB475223904D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90501FB43817CC52D55FD58F /* Pods_VLCKitOpusSeekDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFEE86C6EFF20799A50BC8E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4858B4DFCDAF1EDD6847EEB6 /* Pods-VLCKitOpusSeekDemo.debug.xcconfig */,
+				DADFA269C59617178A263728 /* Pods-VLCKitOpusSeekDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35767CD72AB0B11500369834 /* Build configuration list for PBXNativeTarget "VLCKitOpusSeekDemo" */;
 			buildPhases = (
+				2875A2C49204D4008A32E91E /* [CP] Check Pods Manifest.lock */,
 				35767CC72AB0B11500369834 /* Sources */,
 				35767CC82AB0B11500369834 /* Frameworks */,
 				35767CC92AB0B11500369834 /* Resources */,
+				537AD3DC240D53F637D429CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,12 +167,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35767CDD2AB0C60800369834 /* ehren-paper_lights-96.opus in Resources */,
 				35767CD62AB0B11500369834 /* Preview Assets.xcassets in Resources */,
 				35767CD22AB0B11500369834 /* Assets.xcassets in Resources */,
+				35767CDE2AB0C60800369834 /* ehren-paper_lights-96.LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2875A2C49204D4008A32E91E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VLCKitOpusSeekDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		537AD3DC240D53F637D429CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VLCKitOpusSeekDemo/Pods-VLCKitOpusSeekDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VLCKitOpusSeekDemo/Pods-VLCKitOpusSeekDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLCKitOpusSeekDemo/Pods-VLCKitOpusSeekDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35767CC72AB0B11500369834 /* Sources */ = {
@@ -259,6 +343,7 @@
 		};
 		35767CD82AB0B11500369834 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4858B4DFCDAF1EDD6847EEB6 /* Pods-VLCKitOpusSeekDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -266,6 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VLCKitOpusSeekDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = SS8V8UGLY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -297,6 +383,7 @@
 		};
 		35767CD92AB0B11500369834 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DADFA269C59617178A263728 /* Pods-VLCKitOpusSeekDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VLCKitOpusSeekDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = SS8V8UGLY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

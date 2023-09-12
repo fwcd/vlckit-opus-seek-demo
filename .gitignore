@@ -3,3 +3,4 @@ xcuserdata/
 *.xcworkspace
 *.swp
 build/
+Pods/
